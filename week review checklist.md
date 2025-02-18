@@ -3,6 +3,9 @@ date_creation: 2025-02-03
 time_creation: 09:37:02
 tags:
 ---
+## add wisdom here
+- [[weekly review - wisdom of]]
+
 - [ ] open calendar get sense of avail time for the week
 - [ ] open: prev week note, current week note (to be planned)
 	- Use prev week reflection area to determine next week ([[w-2025-W05#short reflection|for example]])

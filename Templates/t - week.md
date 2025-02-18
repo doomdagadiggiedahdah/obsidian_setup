@@ -5,6 +5,7 @@ tags:
   - weeklynotes
 ---
 - prev wr:: <% `[[w-${moment().format("YYYY")}-W${moment().subtract(1, 'weeks').format("ww")}]]` %>
+- (delete these two after you've completed 💙 )
 - make a new week note: [[week review checklist]]
 - projects:: [[gtd - projects]]
 	- take things from projects and put them here. execute
@@ -12,6 +13,9 @@ tags:
 
 ## - what is the project for this week?
 - What's the single focus?
+
+##  - what am I doing this week?
+- [ ] <% tp.file.cursor() %>
 
 ## - who do I want to hang out with?
 - [ ] call Grandma
@@ -22,9 +26,6 @@ tags:
 2. 
 3. 
 4. 
-
-##  - what am I doing this week?
-- [ ] <% tp.file.cursor() %>
 
 ## - reflection
 - 
