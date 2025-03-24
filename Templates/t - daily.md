@@ -23,8 +23,8 @@ tags:
 ## todos
 - [ ] ✨Daily stuff✨
 	- [ ] morning routine
+	- [ ] anki
 	- [ ] look at weekly notes
 	- [ ] slow_drip
-	- [ ] anki
 	- [ ] do basic KnowFlow 
 	- [ ] reflect on daily winnings (even just the start of the day). 
