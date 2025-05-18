@@ -14,6 +14,9 @@ tags:
 - Work goal: 
 	- become a competent research engineer
 	- extend research network
+- Life goal:
+	- Play
+	- Create memories of strength
 
 ## gratitude
 1. <% tp.file.cursor() %>
@@ -25,6 +28,9 @@ tags:
 	- [ ] morning routine
 	- [ ] anki
 	- [ ] look at weekly notes
-	- [ ] slow_drip
-	- [ ] do basic KnowFlow 
+	- [ ] post in cracked account chat
+	- [ ] make one git commit
 	- [ ] reflect on daily winnings (even just the start of the day). 
+
+## musing
+- 
