@@ -1,0 +1,16 @@
+[Unit]
+Description=Obsidian MOC Auto-Updater
+After=network.target
+
+[Service]
+Type=simple
+User=mat
+WorkingDirectory=/home/mat/Documents/obsidian_setup/obs-moc-sort
+Environment=OBSIDIAN_VAULT=/home/mat/Obsidian/
+Environment=PATH=/home/mat/Documents/obsidian_setup/obs-moc-sort/.venv/bin:/usr/bin:/bin
+ExecStart=/home/mat/Documents/obsidian_setup/obs-moc-sort/.venv/bin/python obsidian_moc_updater.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

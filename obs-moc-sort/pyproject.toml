@@ -1,0 +1,10 @@
+[project]
+name = "obsidian-moc-updater"
+version = "0.1.0"
+dependencies = [
+    "watchdog==6.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
