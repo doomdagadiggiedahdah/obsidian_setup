@@ -12,10 +12,11 @@ chmod +x install.sh
 The installer will prompt for your Obsidian vault path and User name set up the systemd service. eg in your terminal:
 `[I] mat@fantasyFlamingo ~/D/obsidian_setup (main)>` "mat" is my username
 
-
 ## How it works
 
-When you create a note like `project - my new idea.md`, it automatically gets added to `project - MOC.md` as a link.
+Create an MOC file for your project, like `balloons - moc`
+Then whenever you make a file with the `balloons` prefix, it'll be automatically sorted to your MOC file.
+
 
 ## Management
 
