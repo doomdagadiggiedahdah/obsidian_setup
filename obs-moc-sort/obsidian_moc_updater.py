@@ -60,6 +60,23 @@ class MOCUpdater(FileSystemEventHandler):
             
             self.update_moc(dest_path)
     
+    def on_deleted(self, event):
+        if not event.is_directory and event.src_path.endswith('.md'):
+            file_path = Path(event.src_path)
+            note_name = file_path.stem
+            logger.info(f"Markdown file deleted: {event.src_path}")
+            
+            # Skip if it was a MOC file - remove from cache
+            if self._is_moc_file(file_path):
+                self._remove_from_cache(file_path)
+                logger.info(f"MOC file removed from cache: {note_name}")
+                return
+            
+            # Remove link from MOC file if it was a regular note
+            if ' - ' in note_name:
+                prefix = note_name.split(' - ')[0]
+                self.remove_from_moc(note_name, prefix)
+    
     def update_moc(self, note_path):
         note_name = note_path.stem
         
@@ -147,6 +164,42 @@ class MOCUpdater(FileSystemEventHandler):
         if prefix:
             self.moc_cache[prefix] = moc_file
             logger.debug(f"Cached MOC: '{prefix}' -> {moc_file.name}")
+    
+    def _remove_from_cache(self, moc_file):
+        """Remove a MOC file from cache."""
+        # Find and remove the cache entry for this file
+        to_remove = [prefix for prefix, path in self.moc_cache.items() if path == moc_file]
+        for prefix in to_remove:
+            del self.moc_cache[prefix]
+            logger.debug(f"Removed from cache: '{prefix}'")
+    
+    def remove_from_moc(self, note_name, prefix):
+        """Remove a note link from its MOC file."""
+        moc_file = self.find_moc(prefix)
+        if not moc_file:
+            logger.debug(f"No MOC file found for deleted note: {note_name}")
+            return
+        
+        link_to_remove = f"- [[{note_name}]]"
+        
+        try:
+            with open(moc_file, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+            
+            # Filter out the link line
+            original_count = len(lines)
+            lines = [line for line in lines if line.strip() != link_to_remove]
+            
+            if len(lines) < original_count:
+                # Write back the file without the deleted link
+                with open(moc_file, 'w', encoding='utf-8') as f:
+                    f.writelines(lines)
+                logger.info(f"🗑️ Removed '{note_name}' from MOC: {moc_file.name}")
+            else:
+                logger.debug(f"Link not found in MOC for: {note_name}")
+                
+        except Exception as e:
+            logger.error(f"Error removing link from MOC {moc_file.name}: {e}")
 
 
 def main():

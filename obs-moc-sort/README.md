@@ -1,25 +1,26 @@
-# Obsidian MOC Auto-Updater
+# obsidian moc auto-updater
 
-Automatically appends new notes to matching MOC (Map of Content) files based on filename prefixes.
+automatically manages moc (map of content) files by adding/removing note links based on filename prefixes.
 
-## Quick Setup
+## quick setup
 
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
 
-The installer will prompt for your Obsidian vault path and User name set up the systemd service. eg in your terminal:
-`[I] mat@fantasyFlamingo ~/D/obsidian_setup (main)>` "mat" is my username
+the installer will prompt for your obsidian vault path and user name set up the systemd service. eg in your terminal:
+`[i] jeff@your_computer_name ~/d/obsidian_setup (main)>` "jeff" is my username
 
-## How it works
+## how it works
 
-Create an MOC file for your project, like `balloons - moc`
-Then whenever you make a file with the `balloons` prefix, it'll be automatically sorted to your MOC file.
+**auto-add:** create `project - moc.md`, then any `project - task.md` gets automatically linked  
+**auto-remove:** delete a note and its link disappears from the moc instantly  
+**smart caching:** builds a memory cache of all moc files for lightning-fast lookups
 
 
-## Management
+## management
 
-- View logs: `sudo journalctl -u obsidian-moc.service -f`
-- Stop service: `sudo systemctl stop obsidian-moc.service`
-- Restart: `sudo systemctl restart obsidian-moc.service`
+- view logs: `sudo journalctl -u obsidian-moc.service -f`
+- stop service: `sudo systemctl stop obsidian-moc.service`
+- restart: `sudo systemctl restart obsidian-moc.service`
