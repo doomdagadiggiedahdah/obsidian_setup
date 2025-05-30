@@ -23,6 +23,13 @@ if systemctl is-active --quiet obsidian-moc.service; then
     sudo systemctl stop obsidian-moc.service
 fi
 
+# Get user info
+read -p "Enter your username: " USERNAME
+if [[ -z "$USERNAME" ]]; then
+    echo "Error: Username cannot be empty"
+    exit 1
+fi
+
 # Get vault path
 read -p "Enter path to your Obsidian vault: " VAULT_PATH
 
@@ -60,6 +67,7 @@ mkdir -p logs
 # Update service file with correct vault path - use a more robust approach
 CURRENT_DIR=$(pwd)
 cp obsidian-moc.service obsidian-moc.service.tmp
+sed -i "s|User=.*|User=$USERNAME|g" obsidian-moc.service.tmp
 sed -i "s|Environment=OBSIDIAN_VAULT=.*|Environment=OBSIDIAN_VAULT=$VAULT_PATH|g" obsidian-moc.service.tmp
 sed -i "s|WorkingDirectory=.*|WorkingDirectory=$CURRENT_DIR|g" obsidian-moc.service.tmp
 sed -i "s|Environment=PATH=.*|Environment=PATH=$CURRENT_DIR/.venv/bin:/usr/bin:/bin|g" obsidian-moc.service.tmp
