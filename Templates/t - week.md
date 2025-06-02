@@ -13,6 +13,7 @@ tags:
 
 ## - what is the project for this week?
 - What's the single focus?
+	- (note: this has given me feelings of direction. "what would make me feel cool this week?")
 
 ##  - what am I doing this week?
 - [ ] <% tp.file.cursor() %>
