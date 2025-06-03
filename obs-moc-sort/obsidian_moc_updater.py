@@ -105,7 +105,9 @@ class MOCUpdater(FileSystemEventHandler):
         with open(moc_file, 'r') as f:
             content = f.read()
             
-        if link not in content:
+        # Check for existing link (with or without .md extension)
+        link_without_ext = f"- [[{note_name.replace('.md', '')}]]"
+        if link not in content and link_without_ext not in content:
             with open(moc_file, 'a') as f:
                 f.write(f"\n{link}")
             logger.info(f"✅ Added '{note_name}' to MOC: {moc_file.name}")
