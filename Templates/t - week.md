@@ -10,6 +10,7 @@ tags:
 - projects:: [[gtd - projects]]
 	- take things from projects and put them here. execute
 	- each day, look at stuff from this file to find what to work on.
+- go back and review previous week
 
 ## - what is the project for this week?
 - What's the single focus?
