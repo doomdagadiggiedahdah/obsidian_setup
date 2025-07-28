@@ -12,7 +12,7 @@ tags:
 - [ ] open: prev week note, current week note (to be planned)
 	- Use prev week reflection area to determine next week ([[w-2025-W05#short reflection|for example]])
 - [ ] see what didn't get done last week, decide "do this week or backlog?"
-- [ ] book hot yoga
+- [ ] review last week
 
 ## add wisdom here
 - [[weekly review - wisdom of]]
