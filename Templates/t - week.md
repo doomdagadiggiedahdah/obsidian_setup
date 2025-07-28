@@ -21,12 +21,5 @@ tags:
 ## - who do I want to hang out with?
 - [ ] call Grandma
 
-## - slowdrip
-- [[slow_drip - how to]] (delete me after four are picked)
-1. 
-2. 
-3. 
-4. 
-
 ## - reflection
 - 
