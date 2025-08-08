@@ -15,6 +15,8 @@ tags:
 ## - what is the project for this week?
 - What's the single focus?
 	- (note: this has given me feelings of direction. "what would make me feel cool this week?")
+- [[mission - moc]]
+	- (delete this at the ned of week, so not crazy amount of links everywhere)
 
 ##  - what am I doing this week?
 - [ ] <% tp.file.cursor() %>
