@@ -4,8 +4,8 @@ time_creation: 09:37:02
 tags:
 ---
 ## review bigger goals
-- [[perfect 2025 - what would make that?]]
-- I look at these ^^ and then decide what I'm going to bite off at that point.
+- look at [[perfect 2025 - what would make that?]]
+- decide what I'm going to bite off at that point.
 
 ## 
 - [ ] open calendar get sense of avail time for the week
