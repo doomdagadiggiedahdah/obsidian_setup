@@ -5,7 +5,7 @@ tags:
 ---
 ## review bigger goals
 - look at [[perfect 2025 - what would make that?]]
-- decide what I'm going to bite off at that point.
+- decide what things from this ^^ I'm going to bite off at that point.
 
 ## 
 - [ ] open calendar get sense of avail time for the week
