@@ -19,7 +19,7 @@ tags:
 	- (delete this at the ned of week, so not crazy amount of links everywhere)
 
 ##  - what am I doing this week?
-- [ ] found a hackathon?
+- [ ] have a hackathon for this week?
 - [ ] <% tp.file.cursor() %>
 
 ## - who do I want to hang out with?
