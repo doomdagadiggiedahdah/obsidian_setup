@@ -8,13 +8,15 @@ tags:
 	- add reflections of week to be reviewed on bottom
 - decide what things from that list I'm going to bite off at that point
 
-## 
+## plan the week, then reflect
 - [ ] open calendar get sense of avail time for the week
 - [ ] open: prev week note, current week note (to be planned)
 	- Use prev week reflection area to determine next week's tasks ([[w-2025-W05#short reflection|for example]])
 - [ ] see what didn't get done last week, decide "do this week or backlog?"
 - [ ] decide tasks to put on the docket for next week.
-- [ ] go through daily notes of previous week and reflect
+- [ ] projects:: [[gtd - projects]]
+	- [ ] take things from projects and put them on weekly note. execute
+- [ ] go back and review previous week
 
 ## add wisdom here
 - [[weekly review - wisdom of]]
