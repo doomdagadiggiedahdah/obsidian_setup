@@ -4,15 +4,21 @@ time_creation: 09:37:02
 tags:
 ---
 ## review bigger goals
-- look at [[life planning - perfect 2025 - what would make that?]]
-	- add reflections of week to be reviewed on bottom
-- decide what things from that list I'm going to bite off at that point
+- visit [[life planning - perfect 2025 - what would make that?]]
+	- first just look at all the goals (gives a sense of your horizon line).
+	- next, reflect on past week's experiences (good and bad) with those.
+		- open screen on right and scroll down to reflections to type on RHS. 
+		- (this way you can see what you're comparing against. I had context switching cognitive stuff when I could saccad back and forth. or maybe that's bullshit.)
+		- go through each goal and add reflections of week to be reviewed on bottom
+	- [ ] (2025-09-28 - this week trying the big goal task selection later. !!!! reflect on how this feels in [[life planning - meta]] for this next review) finally, decide what things from that list I'm going to bite off at that point
 
 ## plan the week, then reflect
-- [x] open calendar get sense of avail time for the week
-- [x] open: prev week note, current week note (to be planned)
-- [x] see what didn't get done last week, decide "do this week or backlog?"
-- [x] decide tasks to put on the docket for next week. [[gtd - projects]]
+- [ ] open calendar get sense of avail time for the week
+- [ ] open: prev week note, current week note (to be planned)
+- [ ] see what didn't get done last week, decide "do this week or backlog?"
+- [ ] decide tasks to put on the docket for next week. 
+	- [ ] look at perfect 2025 goals and figure out what tasks to take from there
+	- [ ] then look at [[gtd - projects]] and [[mission - moc#to do's]] to find next thing.
 - [ ] go back and review previous week
 
 ## add wisdom here
