@@ -8,15 +8,11 @@ tags:
 - wr:: [[w-<% tp.date.now("YYYY") %>-W<% tp.date.now("ww") %>]]
 	- check this to find things to do today 💙 
 
-## 2025 theme 
-- one word: "CTFO"
-- one sentence: "I've been through worse and have gotten better before."
-- Work goal: 
-	- become a competent research engineer
-	- extend research network
-- Life goal:
-	- Play
-	- Create memories of strength
+## 2025 Q4
+- two words: "try easy"
+- one sentence: "don't be so serious"
+- make sure you invoke this with your environment
+	- go feel the breeze; look at the beauty of the city. laugh with a friend.
 
 ## gratitude
 1. <% tp.file.cursor() %>
@@ -30,6 +26,7 @@ tags:
 	- [ ] look at weekly notes
 	- [ ] post in cracked account chat
 	- [ ] make one git commit
+	- [ ] did you feel the 'not serious' today?
 	- [ ] reflect on daily winnings (even just the start of the day). 
 
 ## musing
