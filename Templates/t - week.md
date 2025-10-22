@@ -5,7 +5,7 @@ tags:
   - weeklynotes
 ---
 - prev wr:: <% `[[w-${moment().format("YYYY")}-W${moment().subtract(1, 'weeks').format("ww")}]]` %>
-- (delete after you've completed 💙 ): make a new week note -- [[week review - checklist]]
+- (delete after you've completed 💙) make a new week note -- [[week review - checklist]]
 
 ## - what is the project for this week?
 - What's the single focus?
