@@ -1,0 +1,65 @@
+/*
+** Customised symbolic hr line in Preview modded from this post (https://forum.obsidian.md/t/horizontal-rule-line-css-use-a-local-svg-in-a-custom-horizontal-rule-line/100527/4)
+*/
+body {
+    --hr-line-offset: 25%; /* Sets the offset for the line to be drawn inside the <hr> */
+    --hr-color: lightblue; /* Defines the color of the horizontal line */
+    /* --hr-text-color: lightblue; */
+    /* --hr-text-offset: 2ch; */
+    --hr-thickness: 2px;
+}
+
+:root hr {
+    --hr-line-color: var(--hr-color);
+    display: grid;
+    place-items: center;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        to right,
+        transparent,
+        var(--hr-line-color) calc(50% - var(--hr-line-offset)),
+        var(--hr-line-color) calc(50% + var(--hr-line-offset)),
+        transparent
+    );
+}
+
+
+
+/*
+- process for this was to take an image, 
+- `ffmpeg -i ./sharingan.jpg -vf "scale=200:200" ./sharingan-small.jpg`
+- `base64 -i ./sharingan-small.jpg | tr -d '\n'`
+- take that output and put it in the `background-image: url("data:image/jpg;base64,{base64 output here}")
+
+## and for svg's
+- `cat Mangekyo_sharingan_6ke.svg | sed '1,3d' | jq -sRr '@uri' | tr -d '\n'`
+	- note: if the og file starts off with the xml version and second line is the svg
+	- reomve the sed command and then continue
+- prefix with the "data:image/svg+xml,{output from above}" and then you're golden.
+*/
+
+body {
+    --custom-hr-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%09xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%09xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%09xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%09xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%09xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%09xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%0A%09id%3D%22sharingan%22%0A%09width%3D%22300%22%0A%09height%3D%22300%22%3E%0A%09%3Cdefs%0A%09%09id%3D%22defs%22%3E%0A%09%09%3CradialGradient%0A%09%09%09id%3D%22gr%22%3E%0A%09%09%09%3Cstop%0A%09%09%09%09offset%3D%220%22%0A%09%09%09%09style%3D%22stop-color%3A%23660000%3B%20stop-opacity%3A%201%3B%22%0A%09%09%09%09id%3D%22st1%22%20%2F%3E%0A%09%09%09%3Cstop%0A%09%09%09%09style%3D%22stop-color%3A%23c30000%3B%20stop-opacity%3A%201%3B%22%0A%09%09%09%09offset%3D%220.5%22%0A%09%09%09%09id%3D%22st2%22%2F%3E%0A%09%09%09%3Cstop%0A%09%09%09%09style%3D%22stop-color%3A%23a00000%3B%20stop-opacity%3A%201%3B%22%0A%09%09%09%09offset%3D%221%22%0A%09%09%09%09id%3D%22st3%22%2F%3E%0A%09%09%3C%2FradialGradient%3E%0A%09%3C%2Fdefs%3E%0A%09%3Ccircle%0A%09%09style%3D%22fill%3A%20url%28%23gr%29%3B%20stroke%3A%23000%3B%20stroke-width%3A10%3B%22%0A%09%09cx%3D%22150%22%0A%09%09cy%3D%22150%22%0A%09%09r%3D%22145%22%0A%09%09id%3D%22iris%22%20%2F%3E%0A%09%3Cg%0A%09%09id%3D%22tomoe%201%22%3E%0A%09%09%3Cpath%0A%09%09%09style%3D%22fill%3Anone%3B%20stroke%3A%23000%3B%20stroke-width%3A%205%3B%22%0A%09%09%09d%3D%22M200%2C150%20C%20200%2C215%20170%2C275%20150%2C295%20C%20130%2C275%20100%2C215%20100%2C150%20C%20100%2C85%20130%2C25%20150%2C5%20C%20170%2C25%20200%2C85%20200%2C150%20z%22%0A%09%09%09id%3D%22tomoe%201a%22%20%2F%3E%0A%09%09%3Cpath%0A%09%09%09style%3D%22fill%3A%23000%3B%22%0A%09%09%09d%3D%22M%20275%2C77.5%20C%20260%2C40%20200%2C0%20150%2C5%20C%20170%2C30%20183.4%2C55.1%20190%2C80%20C%20215%2C75%20244.2%2C71.7%20275%2C77.5%20z%22%0A%09%09%09id%3D%22tomoe%201b%22%20%2F%3E%0A%09%09%3Cuse%0A%09%09%09xlink%3Ahref%3D%22%23tomoe%201b%22%0A%09%09%09transform%3D%22rotate%28180%20150%20150%29%22%0A%09%09%09id%3D%22tomoe%201c%22%20%2F%3E%0A%09%09%3Cpath%0A%09%09%09style%3D%22fill%3A%23000%3B%22%0A%09%09%09d%3D%22M%20150%2C258.7%20C%20141%2C244%20131.5%2C195.8%20128.6%2C162.4%20L%20150%2C150%20171.4%2C162.4%20C%20168.5%2C195.8%20159%2C244%20150%2C258.7%20z%22%0A%09%09%09id%3D%22path3000%22%20%2F%3E%0A%09%3C%2Fg%3E%0A%09%3Cuse%0A%09%09xlink%3Ahref%3D%22%23tomoe%201%22%0A%09%09transform%3D%22rotate%28120%20150%20150%29%22%0A%09%09id%3D%22tomoe%202%22%20%2F%3E%0A%09%3Cuse%0A%09%09xlink%3Ahref%3D%22%23tomoe%201%22%0A%09%09transform%3D%22rotate%28-120%20150%20150%29%22%0A%09%09id%3D%22tomoe%203%22%20%2F%3E%0A%09%3Ccircle%0A%09%09style%3D%22fill%3A%23a00000%3B%22%0A%09%09cx%3D%22150%22%0A%09%09cy%3D%22150%22%0A%09%09r%3D%2220%22%0A%09%09id%3D%22center%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+body:not(.encore-disable-logo-on-hr) .markdown-rendered hr,
+body:not(.encore-disable-logo-on-hr) .cm-line.hr hr {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+body:not(.encore-disable-logo-on-hr) .markdown-source-view:not(.is-live-preview) .HyperMD-hr::after, 
+body:not(.encore-disable-logo-on-hr) .markdown-rendered hr::after, 
+body:not(.encore-disable-logo-on-hr) .cm-line.hr hr::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--custom-hr-image) !important;
+}
+}
