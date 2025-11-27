@@ -3,16 +3,24 @@ date_creation: 2025-02-03
 time_creation: 09:37:02
 tags:
 ---
-## review bigger goals
+### new challenger appears!
+- could be fun to try the "scrupulously plan my weeks by placing calendar events" for like 4 weeks.
+- small experiment, I'm curious to have my meals planned out all the time. that seems like a big one. and things like yoga.
+
+
+## 1. review bigger goals
 - visit [[life planning - perfect 2025 - what would make that?]]
 - just look at all the goals (gives a sense of your horizon line).
-- next, reflect on past week's experiences (good and bad) with those.
-	- open screen on right and scroll down to reflections to type on RHS. 
-	- (this way you can see what you're comparing against. I had context switching cognitive stuff when I could saccad back and forth. or maybe that's bullshit.)
+- next, reflect on past week's experiences (good and bad) with those longer term goals.
+	- split tabs with both tabs on perfect {year}
+	- have high level goals on LHS, reflections (to type) on RHS. 
+		- (this way you can see what you're comparing against. I had context switching cognitive stuff when I could saccad back and forth. or maybe that's bullshit.)
 	- go through each goal and add reflections of week to be reviewed on bottom
 
-## review the week, then plan the week
+## 2. review the week
 - [ ] go back and review previous week
+
+## 3. then plan the week
 - [ ] open calendar get sense of avail time for the week
 - [ ] open: prev week note, current week note (to be planned)
 - [ ] see what didn't get done last week, decide "do this week or backlog?"

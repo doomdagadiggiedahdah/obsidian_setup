@@ -1,6 +1,7 @@
 /*
 ** Customised symbolic hr line in Preview modded from this post (https://forum.obsidian.md/t/horizontal-rule-line-css-use-a-local-svg-in-a-custom-horizontal-rule-line/100527/4)
 */
+
 body {
     --hr-line-offset: 25%; /* Sets the offset for the line to be drawn inside the <hr> */
     --hr-color: lightblue; /* Defines the color of the horizontal line */
@@ -53,10 +54,10 @@ body:not(.encore-disable-logo-on-hr) .markdown-rendered hr::after,
 body:not(.encore-disable-logo-on-hr) .cm-line.hr hr::after {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -34px;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 69px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
