@@ -1,5 +1,7 @@
 /*
 ** Customised symbolic hr line in Preview modded from this post (https://forum.obsidian.md/t/horizontal-rule-line-css-use-a-local-svg-in-a-custom-horizontal-rule-line/100527/4)
+** https://forum.obsidian.md/t/creating-fancy-horizontal-rule-lines/63700/2
+** https://upload.wikimedia.org/wikipedia/commons/a/aa/Mangekyou_Sharingan_Sasuke_%28Eternal%29.svg
 */
 
 body {
@@ -45,7 +47,7 @@ body {
 
 body:not(.encore-disable-logo-on-hr) .markdown-rendered hr,
 body:not(.encore-disable-logo-on-hr) .cm-line.hr hr {
-    margin-top: 60px !important;
+    margin-top: 35px !important;
     margin-bottom: 60px !important;
 }
 

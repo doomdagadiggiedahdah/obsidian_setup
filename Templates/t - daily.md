@@ -8,12 +8,6 @@ tags:
 - wr:: [[w-<% tp.date.now("YYYY") %>-W<% tp.date.now("ww") %>]]
 	- check this to find things to do today 💙 
 
-## 2025 Q4
-- two words: "try easy"
-- one sentence: "don't be so serious"
-- make sure you invoke this with your environment
-	- go feel the breeze; look at the beauty of the city. laugh with a friend.
-
 ## gratitude
 1. <% tp.file.cursor() %>
 2. 
