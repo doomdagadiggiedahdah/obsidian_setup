@@ -58,6 +58,8 @@ class MOCUpdater(FileSystemEventHandler):
                 self._update_moc_cache_entry(dest_path)
                 logger.info(f"New MOC file added to cache: {dest_path.name}")
             
+            # Wait for Obsidian to update links before checking for duplicates
+            time.sleep(2)
             self.update_moc(dest_path)
     
     def on_deleted(self, event):
