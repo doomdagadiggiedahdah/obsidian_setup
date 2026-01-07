@@ -3,10 +3,6 @@ date_creation: 2025-02-03
 time_creation: 09:37:02
 tags:
 ---
-### new challenger appears!
-- could be fun to try the "scrupulously plan my weeks by placing calendar events" for like 4 weeks.
-- small experiment, I'm curious to have my meals planned out all the time. that seems like a big one. and things like yoga.
-
 
 ## 1. review bigger goals
 - visit [[life planning - perfect 2025 - what would make that?]]

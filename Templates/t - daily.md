@@ -16,11 +16,7 @@ tags:
 ## todos
 - [ ] ✨Daily stuff✨
 	- [ ] morning routine
-	- [ ] anki
 	- [ ] look at weekly notes
-	- [ ] post in cracked account chat
-	- [ ] make one git commit
-	- [ ] (Q3 goal) did you feel the 'not serious' today?
 	- [ ] reflect on daily winnings (even just the start of the day). 
 
 ## musing
